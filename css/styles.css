@@ -210,11 +210,11 @@ img {
   display: flex;
   gap: 24px;
   flex-direction: row;
-  width: calc((100% - 72px) / 4);
 }
 .team-item {
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
 .team-title {
   font-weight: 500;
@@ -278,7 +278,6 @@ img {
 }
 /* footer */
 .page-footer {
-  display: flex;
   background-color: #2e2f42;
   padding: 100px 0;
 }
@@ -288,10 +287,6 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   width: 264px;
-}
-.container-footer {
-  display: flex;
-  flex-direction: column;
 }
 .footer-logo {
   display: inline-block;
