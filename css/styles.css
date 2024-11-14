@@ -63,7 +63,6 @@ margin-left: auto;
   text-transform: uppercase;
   color: #4d5ae5;
  }
-
 .header-logo .logo-part {
   color: #2e2f42;
 }
@@ -124,7 +123,6 @@ margin-left: auto;
 .button:focus {
     background-color: #404bbf
 }
-
 .section-solutions-title {
     font-weight: 700;
     font-size: 56px;
@@ -163,12 +161,10 @@ margin-left: auto;
 /* section team */
 .section-team {
     background-color: #f4f4fd;
-    display: flex;
-    flex-direction: column;
 }
 .container-team {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .sections-headers {
   font-weight: 700;
@@ -184,6 +180,8 @@ margin-left: auto;
 .img-list {
   display: flex;
   gap: 24px;
+  flex-direction: row;
+  margin-bottom: 120px;
 }
 .team-item {
    background-color: #fff;
@@ -214,9 +212,17 @@ margin-left: auto;
 .container-portfolio {
   display: flex;
   flex-direction: column;
+  margin-bottom: 120px;
+  }
+.portfolio-img-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
-
-
+.portfolio-text-container {
+  display: flex;
+}
 .portfolio-title {
     font-weight: 500;
     font-size: 20px;
@@ -229,12 +235,29 @@ margin-left: auto;
     letter-spacing: 0.02em;
     color: #434455;
 }
-.page-footer {
-    background-color: #2e2f42;
+.portfolio-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 32px 0 32px 16px;
 }
+/* footer */
+.page-footer {
+  display: flex;
+  background-color: #2e2f42;
+}
+
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    width: 264px;
+}
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
