@@ -35,8 +35,6 @@ border-bottom: 1px solid #e7e9fc;
 .header-nav {
   display: flex;
   align-items: center;
-  margin-top: 24px;
-  margin-bottom: 24px;
 }
 .nav-list {
   display: flex;
@@ -89,6 +87,7 @@ margin-left: auto;
 }
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 .contacts-link {
   font-size: 16px;
@@ -96,10 +95,14 @@ margin-left: auto;
   letter-spacing: 0.02em;
   color: #434455;
 }
+
+/* section solutions */
 .section-solutions {
-    background-color: #2e2f42;
+  background-color: #2e2f42;
+  display: flex;
 }
 .button {
+    display: block;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -108,11 +111,20 @@ margin-left: auto;
     color: #fff;
     cursor: pointer;
     background-color: #4d5ae5;
+    border-radius: 4px;
+    padding: 16px 32px;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    min-width: 169px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 188px;
 }
 .button:hover,
 .button:focus {
     background-color: #404bbf
 }
+
 .section-solutions-title {
     font-weight: 700;
     font-size: 56px;
@@ -120,31 +132,58 @@ margin-left: auto;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    padding-top: 188px;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 496px;
 }
-.sections-headers {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    text-transform: capitalize;
-    color: #2e2f42;
-}
+ /* section2 */
+ .list-doing {
+  display: flex;
+  width: calc((100% - 72px) / 4);
+  gap: 24px;
+  margin: 120px 0;
+ }
 .section-doing-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .section-doing-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    width: 264px;
 }
+/* section team */
 .section-team {
     background-color: #f4f4fd;
+    display: flex;
+    flex-direction: column;
+}
+.container-team {
+  display: flex;
+  flex-direction: row;
+}
+.sections-headers {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin: 120px auto 72px;
+  display: flex;
+}
+.img-list {
+  display: flex;
+  gap: 24px;
 }
 .team-item {
    background-color: #fff;
@@ -163,6 +202,21 @@ margin-left: auto;
     text-align: center;
     color: #434455;
 }
+
+.team-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 32px 16px;
+}
+
+/* section portfolio */
+.container-portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .portfolio-title {
     font-weight: 500;
     font-size: 20px;
